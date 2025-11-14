@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+<div class="container">
+    <img src="wallet_note_logo.png" class="logo">
+
+    <h1>Create Account</h1>
+
+    <label>Name</label>
+    <div class="input-wrapper">
+        <input id="name" type="text" placeholder="Your Name" class="input-field">
+    </div>
+
+    <label>Email</label>
+    <div class="input-wrapper">
+        <input id="email" type="email" placeholder="Your Email" class="input-field">
+    </div>
+
+    <label>Password</label>
+    <div class="input-wrapper">
+        <input id="password" type="password" placeholder="Password" class="input-field">
+    </div>
+
+    <button class="create-btn" onclick="createAccount()">Create Account</button>
+
+    <a href="login.html" class="back-link">Back to Login</a>
+</div>
+
+<script>
+function createAccount() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const pw = document.getElementById("password").value.trim();
+
+    if (!name || !email || !pw) {
+        alert("All fields are required.");
+        return;
+    }
+
+    localStorage.setItem("username", email);
+    localStorage.setItem("password", pw);
+    localStorage.setItem("name", name);
+
+    alert("Account Created!");
+    window.location.href = "login.html";
+}
+
+function togglePw(id) {
+    const input = document.getElementById(id);
+    input.type = (input.type === "password") ? "text" : "password";
+}
+</script>
+
+</body>
+</html>
