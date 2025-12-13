@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style_dashboard.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="settings-icon">
+        <a href="setting.html">
+            <img src="setting.png" class="setting-icon-img">
+        </a>
+    </div>
+
+    <div class="icons">
+        <canvas id="pieChart" class="icon"></canvas>
+        <canvas id="barChart" class="icon"></canvas>
+    </div>
+
+    <h1>Dashboard</h1>
+
+    <label>Date</label>
+    <input type="text" placeholder="Date">
+
+    <label>Product or Service</label>
+    <input type="text" placeholder="Product or Service">
+
+    <label>Price</label>
+    <input type="text" placeholder="Price">
+
+    <div class="btn-row">
+        <button class="recall">Recall</button>
+        <button class="history">Show Used History</button>
+    </div>
+
+    <div class="btn-row">
+        <button class="in">IN</button>
+        <button class="out">OUT</button>
+    </div>
+
+    <div class="btn-row">
+        <button class="photo">Take Photo</button>
+        <button class="save">Save Information</button>
+    </div>
+
+    <a href="login.html" class="back">Back to Login</a>
+</div>
+
+<!-- Dashboard logic -->
+<script src="dashboard.js"></script>
+
+</body>
+</html>

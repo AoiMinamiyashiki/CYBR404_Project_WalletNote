@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+<div class="container">
+    <img src="wallet_note_logo.png" class="logo">
+
+    <label>Username (Email)</label>
+    <input id="username" type="text" placeholder="Enter Email" class="pw">
+
+    <label>Password</label>
+    <input id="password" type="password" placeholder="Enter Password" class="pw">
+
+    <div class="button-area">
+        <button class="btn login-btn" onclick="validateLogin()">LOGIN</button>
+        <a href="signup.html" class="btn signup-btn">SIGN UP</a>
+    </div>
+</div>
+
+<script>
+function validateLogin() {
+    const inputUser = document.getElementById("username").value.trim();
+    const inputPw   = document.getElementById("password").value.trim();
+
+    const savedUser = localStorage.getItem("username");
+    const savedPw   = localStorage.getItem("password");
+
+    if (!inputUser || !inputPw) {
+        alert("Username and Password are required.");
+        return;
+    }
+
+    if (inputUser === savedUser && inputPw === savedPw) {
+        window.location.href = "dashboard.html";  // ← ここが重要
+    } else {
+        alert("Incorrect Username or Password.");
+    }
+}
+</script>
+
+</body>
+</html>

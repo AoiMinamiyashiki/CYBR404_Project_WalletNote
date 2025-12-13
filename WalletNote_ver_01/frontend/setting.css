@@ -1,0 +1,75 @@
+/* === 背景を全ページと統一 === */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3EEEA;   /* ← 他ページと同じ背景色に統一 */
+    font-family: Arial, sans-serif;
+}
+
+/* センターボックス（Dashboard と Signup と同じデザイン） */
+.settings-container {
+    max-width: 420px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* タイトル */
+.settings-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* ラベルと入力欄の統一 */
+.settings-container label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.settings-container input,
+.settings-container select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* ボタン */
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.logout-btn {
+    background: #d9534f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn {
+    background: #006666;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    opacity: 0.8;
+}
+.back-btn:hover {
+    opacity: 0.8;
+}

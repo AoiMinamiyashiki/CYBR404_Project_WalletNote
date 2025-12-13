@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+
+<body>
+
+<div class="settings-container">
+    <h1>Settings</h1>
+
+    <div class="setting-row">
+        <label for="username">Username</label>
+        <input id="username" type="text">
+    </div>
+
+    <div class="setting-row">
+        <label for="password">Password</label>
+
+        <div class="password-wrapper">
+            <input id="password" type="password">
+            <img src="eye_icon.png" class="eye" onclick="togglePW()">
+        </div>
+    </div>
+
+    <div class="setting-row">
+        <label>Theme</label>
+        <select id="theme">
+            <option>Light Mode</option>
+            <option>Dark Mode</option>
+        </select>
+    </div>
+
+    <div class="setting-row">
+        <label>Notifications</label>
+        <select id="notifications">
+            <option>ON</option>
+            <option>OFF</option>
+        </select>
+    </div>
+
+    <div class="settings-links">
+        <a href="login.html">Log Out</a>
+        <a href="dashboard.html">Back</a>
+    </div>
+</div>
+
+
+<script>
+function togglePW() {
+    const pw = document.getElementById("password");
+    pw.type = pw.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>

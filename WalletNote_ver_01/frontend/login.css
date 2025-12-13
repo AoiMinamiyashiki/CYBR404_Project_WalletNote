@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f0ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.pw {
+    width: 260px;
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid #999;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.login-btn {
+    background: #005c66;
+}
+
+.signup-btn {
+    background: #f5a623;
+}
