@@ -101,12 +101,13 @@ button {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 10;        /* ← 重要：前面に固定 */
+    z-index: 10;   
 }
 
 .setting-icon-img {
-    width: 32px;         /* ← 必ずこのサイズで固定 */
+    width: 32px; 
     height: 32px;
-    object-fit: contain; /* ← 原寸大防止 */
+    object-fit: contain; 
     display: block;
 }
+
