@@ -1,12 +1,11 @@
-/* === 背景を全ページと統一 === */
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #F3EEEA;   /* ← 他ページと同じ背景色に統一 */
+    background-color: #F3EEEA;  
     font-family: Arial, sans-serif;
 }
 
-/* センターボックス（Dashboard と Signup と同じデザイン） */
 .settings-container {
     max-width: 420px;
     margin: 60px auto;
@@ -16,14 +15,12 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
-/* タイトル */
 .settings-container h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
 }
 
-/* ラベルと入力欄の統一 */
 .settings-container label {
     font-weight: bold;
     display: block;
@@ -42,7 +39,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* ボタン */
 .btn-row {
     display: flex;
     justify-content: space-between;
@@ -73,3 +69,4 @@ body {
 .back-btn:hover {
     opacity: 0.8;
 }
+
