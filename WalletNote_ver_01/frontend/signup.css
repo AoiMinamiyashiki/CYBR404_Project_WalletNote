@@ -32,7 +32,6 @@ label {
     color: #222;
 }
 
-/* アイコン付きボックス */
 .input-wrapper {
     position: relative;
     width: 95%;
@@ -89,3 +88,4 @@ label {
     font-size: 14px;
     color: #4b2caf;
 }
+
