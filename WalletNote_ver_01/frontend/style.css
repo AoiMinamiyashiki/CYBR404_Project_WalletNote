@@ -58,7 +58,7 @@ h1 {
 .btn {
     display: inline-block;
     text-align: center;
-    text-decoration: none; /* ← a の下線消す */
+    text-decoration: none;
     width: 48%;
     padding: 15px 0;
     font-size: 16px;
@@ -67,3 +67,4 @@ h1 {
     cursor: pointer;
     color: white;
 }
+
