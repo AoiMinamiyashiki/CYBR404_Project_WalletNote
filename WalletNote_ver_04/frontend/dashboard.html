@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | WalletNote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Dashboard</h2>
+
+    <!-- OCR Upload -->
+    <input type="file" id="receipt" accept="image/*">
+    <button class="ghost" onclick="uploadReceipt()">Scan Receipt (OCR)</button>
+
+    <hr style="margin:16px 0; border:0; border-top:1px solid rgba(212,175,55,.3);">
+
+    <!-- Record Form -->
+    <input id="date" type="date">
+    <input id="amount" placeholder="Amount ($)">
+    <input id="category" placeholder="Category">
+
+    <select id="type">
+        <option value="expense">Expense</option>
+        <option value="income">Income</option>
+    </select>
+
+    <button onclick="saveRecord()">Save Record</button>
+    <button class="ghost" onclick="loadRecords()">Load Records</button>
+
+    <pre id="result"></pre>
+
+    <hr style="margin:20px 0; border:0; border-top:1px solid rgba(212,175,55,.3);">
+
+    <!-- Chart Area -->
+    <h3 style="text-align:center; color:#d4af37; margin-bottom:12px;">
+        Expense Overview
+    </h3>
+
+    <img id="pieChart" alt="Pie Chart" style="width:100%; margin-bottom:16px;">
+    <img id="barChart" alt="Bar Chart" style="width:100%;">
+
+    <button class="ghost" style="margin-top:20px;"
+            onclick="location.href='setting.html'">
+        Settings
+    </button>
+</div>
+
+<script src="js/style.js"></script>
+</body>
+</html>
