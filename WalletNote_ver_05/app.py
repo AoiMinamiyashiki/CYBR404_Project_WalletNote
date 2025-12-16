@@ -24,7 +24,7 @@ from WalletNote_ver_05.Backend.System.OCR_System import OCRSystem
 from WalletNote_ver_05.Backend.System.Setting import Setting
 
 # ---------------------------------------------------------------------
-# Flask App Configuration  ★★★ ここが修正点 ★★★
+# Flask App Configuration  
 # ---------------------------------------------------------------------
 
 app = Flask(
@@ -246,3 +246,4 @@ def api_set_currency():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
